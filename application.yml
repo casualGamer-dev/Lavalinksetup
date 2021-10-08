@@ -1,0 +1,35 @@
+lavalink:
+  server:
+    bufferDurationMs: 300
+    gc-warnings: true
+    password: Toivi:D
+    playerUpdateInterval: 3
+    soundcloudSearchEnabled: true
+    sources:
+      bandcamp: true
+      http: true
+      local: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      youtube: true
+    youtubePlaylistLoadLimit: 8
+    youtubeSearchEnabled: true
+logging:
+  file:
+    max-history: 30
+    max-size: 1GB
+  level:
+    lavalink: INFO
+    root: INFO
+  path: ./logs/
+metrics:
+  prometheus:
+    enabled: false
+    endpoint: /metrics
+sentry:
+  dsn: ""
+  environment: ""
+server:
+  address: 0.0.0.0
+  port: 2333
